@@ -1,4 +1,4 @@
-first-steps-angularjs
+First steps AngularJS
 =====================
 
 My first lessons with angularjs
