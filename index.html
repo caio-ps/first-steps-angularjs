@@ -10,10 +10,14 @@
     	<!-- Import Angular and my model -->
     	<script src="js/angular.js"></script>
     	<script src="js/root.js"></script>
+    	<link href="css/root.css" rel="stylesheet">
 
-    	<!-- Bootstrap, just to be bauty -->
+    	<!-- Bootstrap, just to be beuty -->
     	<link href="css/bootstrap.css" rel="stylesheet">
 	</head>
+
+	<!-- All the secrets are in the 'ng-' attributes -->
+
 	<body ng-app="root">
    		<div class="container" ng-controller="index">
    			<!-- This is the way I bind the $scope.message variable! -->
@@ -32,7 +36,11 @@
 					<input type="radio" name="favoriteColor" value="yellow" ng-model="favoriteColor">Yellow</input>
 					<input type="radio" name="favoriteColor" value="blue" ng-model="favoriteColor">Blue</input>
 					<br />
-					<label>You just select <font color="{{favoriteColor}}">{{favoriteColor}}</font>!</label>
+					<label>You just select 
+						<span ng-class="{red: isRed(), green: isGreen(), yellow: isYellow(), blue:isBlue()}">
+							{{favoriteColor}}
+						</span>
+					!</label>
    				</div>
    				<div class="form-group">
  					<label for="favoriteShape">Favorite Color:</label>
@@ -41,7 +49,11 @@
 						<option value="Triangle">Triangle</option>
 						<option value="Square">Square</option>
 					</select>
-					<label>You like the <u>{{favoriteShape}}</u> shape!</label>
+					<label>You like the 
+						<span ng-class="{red: isRed(), green: isGreen(), yellow: isYellow(), blue:isBlue()}">
+							{{favoriteShape}}
+						</span> shape!
+					</label>
 				</div>
    			</form>
    		</div>    	

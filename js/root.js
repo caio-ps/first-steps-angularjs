@@ -11,4 +11,21 @@ angular.module("root", [])
 		$scope.favoriteColor = "red";
 		$scope.favoriteShape = "Circle";
 
+		/*Now I create the cool functions, to give some color to my page*/
+		$scope.isRed = function () {
+			return $scope.favoriteColor === "red";
+		};
+
+		$scope.isGreen = function () {
+			return $scope.favoriteColor === "green";
+		};
+
+		$scope.isYellow = function () {
+			return $scope.favoriteColor === "yellow";
+		};
+
+		$scope.isBlue = function () {
+			return $scope.favoriteColor === "blue";
+		};
+
 	}]);
