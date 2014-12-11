@@ -11,7 +11,7 @@ angular.module("root", [])
 		$scope.favoriteColor = "red";
 		$scope.favoriteShape = "Circle";
 
-		/*Now I create the cool functions, to give some color to my page*/
+		/*Now I create some cool functions, to give some color to my page*/
 		$scope.isRed = function () {
 			return $scope.favoriteColor === "red";
 		};
@@ -27,5 +27,13 @@ angular.module("root", [])
 		$scope.isBlue = function () {
 			return $scope.favoriteColor === "blue";
 		};
+
+		/*Let's create a map with cool programming languages. This map will be used to fill a nice table!*/
+		$scope.programmingLanguages = [
+			{id: 1, name: "Java"},
+			{id: 2, name: "JavaScript"},
+			{id: 3, name: "Python"},
+			{id: 4, name: "Dic2"}
+		];
 
 	}]);
