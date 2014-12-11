@@ -36,4 +36,7 @@ angular.module("root", [])
 			{id: 4, name: "Dic2"}
 		];
 
+		/*As I'm a nice person, I'm going to let user to choose if he or she wants to see the table*/
+		$scope.showTable = true;
+
 	}]);

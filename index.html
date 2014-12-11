@@ -55,20 +55,24 @@
 						</span> shape!
 					</label>
 				</div>
+				<div class="form-group">
+					<input type="checkbox" id="showTable" ng-model="showTable" />
+ 					<label for="showTable">Show table:</label>   					
+				</div>
    			</form>
-   			<table class="table table-striped">
-   			<thead>
-   				<tr>
-   					<th>#</th>
-   					<th>Cool programming languages</th>   					
-   				</tr>   				
-   			</thead>
-   			<tbody>
-   				<tr ng-repeat="language in programmingLanguages">
-   					<td>{{language.id}}</td>
-   					<td>{{language.name}}</td>
-   				</tr>
-   			</tbody>
+   			<table class="table table-striped" ng-show="showTable">
+	   			<thead>
+	   				<tr>
+	   					<th>#</th>
+	   					<th>Cool programming languages</th>   					
+	   				</tr>   				
+	   			</thead>
+	   			<tbody>
+	   				<tr ng-repeat="language in programmingLanguages">
+	   					<td>{{language.id}}</td>
+	   					<td>{{language.name}}</td>
+	   				</tr>
+	   			</tbody>
 			</table>
    		</div>    	
     </body>
