@@ -8,8 +8,7 @@ My first lessons with angularjs
 - Services
 
 ```javascript
-function test() {
-  console.log("notice the blank line before this function?");
-}
+angular.module("cool",[])
+  .controller("myController", ["$scope", function($scope){}]);
 ```
 
